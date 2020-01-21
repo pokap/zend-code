@@ -118,7 +118,7 @@ class TraitUsageGenerator extends AbstractGenerator implements TraitUsageInterfa
      * @param string $use
      * @return string|null
      */
-    public function getUseAlias(string $use): ?string
+    public function getUseAlias(string $use)
     {
         foreach ($this->uses as $key => $value) {
             $parts = explode(' as ', $key);

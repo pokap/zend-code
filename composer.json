@@ -16,7 +16,7 @@
         "forum": "https://discourse.zendframework.com/c/questions/components"
     },
     "require": {
-        "php": "^7.1",
+        "php": "^7.0",
         "zendframework/zend-eventmanager": "^2.6 || ^3.0"
     },
     "require-dev": {

@@ -236,7 +236,7 @@ abstract class AbstractMemberGenerator extends AbstractGenerator
         return $this;
     }
 
-    public function removeDocBlock(): void
+    public function removeDocBlock()
     {
         $this->docBlock = null;
     }

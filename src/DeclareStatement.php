@@ -6,11 +6,11 @@ use Zend\Code\Exception\InvalidArgumentException;
 
 class DeclareStatement
 {
-    public const TICKS = 'ticks';
-    public const STRICT_TYPES = 'strict_types';
-    public const ENCODING = 'encoding';
+    const TICKS = 'ticks';
+    const STRICT_TYPES = 'strict_types';
+    const ENCODING = 'encoding';
 
-    private const ALLOWED = [
+    const ALLOWED = [
         self::TICKS        => 'integer',
         self::STRICT_TYPES => 'integer',
         self::ENCODING     => 'string',

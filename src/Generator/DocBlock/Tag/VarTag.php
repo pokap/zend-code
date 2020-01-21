@@ -21,7 +21,7 @@ class VarTag extends AbstractTypeableTag implements TagInterface
      * @param string|string[] $types
      * @param string|null     $description
      */
-    public function __construct(?string $variableName = null, $types = [], ?string $description = null)
+    public function __construct($variableName = null, $types = [], $description = null)
     {
         if (null !== $variableName) {
             $this->variableName = ltrim($variableName, '$');
@@ -43,14 +43,14 @@ class VarTag extends AbstractTypeableTag implements TagInterface
      *           @see \Zend\Code\Generator\DocBlock\TagManager, which
      *           uses setters
      */
-    public function setVariableName(?string $variableName) : void
+    public function setVariableName($variableName)
     {
         if (null !== $variableName) {
             $this->variableName = ltrim($variableName, '$');
         }
     }
 
-    public function getVariableName() : ?string
+    public function getVariableName()
     {
         return $this->variableName;
     }

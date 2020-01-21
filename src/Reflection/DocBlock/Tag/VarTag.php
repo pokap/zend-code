@@ -37,7 +37,7 @@ class VarTag implements TagInterface, PhpDocTypedTagInterface
     /**
      * {@inheritDoc}
      */
-    public function initialize($tagDocblockLine) : void
+    public function initialize($tagDocblockLine)
     {
         $match = [];
 
@@ -70,12 +70,12 @@ class VarTag implements TagInterface, PhpDocTypedTagInterface
         return $this->types;
     }
 
-    public function getVariableName() : ?string
+    public function getVariableName()
     {
         return $this->variableName;
     }
 
-    public function getDescription() : ?string
+    public function getDescription()
     {
         return $this->description;
     }

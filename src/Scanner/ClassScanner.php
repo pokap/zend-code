@@ -918,7 +918,7 @@ class ClassScanner implements ScannerInterface
                 ); // adjust token line by last known newline count
             } else {
                 $lastTokenArray = $token;
-                [$tokenType, $tokenContent, $tokenLine] = $token;
+                list($tokenType, $tokenContent, $tokenLine) = $token;
             }
 
             return $tokenIndex;
